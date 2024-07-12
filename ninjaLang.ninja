@@ -1,0 +1,9 @@
+import ninjax.core.Lang.user.keywords  
+
+class Lang{
+	
+	private KeyWord={
+		let?{keywords==::KeyWord??}
+	}  
+	property final Get() :: record KeyWord  
+}

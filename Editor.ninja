@@ -1,0 +1,54 @@
+import ninja.os.*
+import ninja.List.*
+import ninja.graf.*
+
+
+class Editor : View?,CodeSoft,OnCodeCurser{
+	
+	
+	@program onCodeChange(int32 datas,let op) : Void{
+		
+	}
+	@program onCodeChange() : Void{
+		
+	}
+	@program onCodeAz(TextViewer view,CodeNullPonit ponit) : Void{
+		
+	}
+	@program onCodeSave() : Void{
+		
+	}
+	@program onCodeAzError() : Void{
+		
+	}
+	@program onCodeFormat() : Void{
+		
+	}
+	
+	@program onDraw(Panit paint)  {
+		paint.save()
+		paint.color = '#ffffff'
+		paint.drawtext = this
+		paint.colorSh = '#000000'
+		
+	}
+	fun text = this??
+	fun isFormat = get(){
+		List<FormatChange> change ={it
+			LocalSoopce -> @RunInUi? text.replace=it.newText!!RunTimeError('Error not Format code')
+			
+		}
+	}
+	fun format = isFormat
+	fun Syntesk : void{
+		synchronized(Syntesk).also{
+			Span span =apply[
+			this::get
+			]
+		}
+	}
+	@synchronized  
+	class Span : CodeSpan{
+		
+	}
+}
